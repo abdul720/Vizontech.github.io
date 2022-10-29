@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,700&display=swap');
+
+* {
+    background-color: black;
+}
+
+/* Header and Footer Header code */
+#head {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#head2 {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+
+}
+#showh {
+    display: none;
+}
+
+/* All Cards CSS */
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card1 {
+    display: flex;
+    min-width: 140px;
+    max-width: 600px;
+    width: 450px;
+    background-color: rgba(149, 144, 147, 0.14);
+    height: 200px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+.card1 .text {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.text p {
+    color: gray;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text button {
+    background-color: rgba(108, 105, 107, 0.14);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+
+}
+
+/* Second Header code */
+#show {
+    display: none;
+}
+
+
+
+
+/* All Cards Hover Effect */
+.card1:hover {
+    border: 3px solid blue;
+
+}
+
+ /* Media Queries */
+
+@media only screen and (max-width: 500px) {
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        min-width: 140px;
+        max-width: 600px;
+        width: 135px;
+        background-color: rgba(149, 144, 147, 0.14);
+        height: fit-content;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .card1 img {
+        width: 100%;
+        height: 45%;
+    }
+
+    #hide {
+
+        display: none;
+    }
+
+    #show {
+        display: block;
+    }
+
+    .text h1 {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 12px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    /* Headers */
+
+    #head {
+        color: white;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        display: none;
+    }
+
+    #head2 {
+        color: white;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    #showh {
+        display: block;
+        color: white;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+
+    }
+}
